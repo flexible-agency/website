@@ -54,7 +54,7 @@ function IndexPage() {
               className="font-semibold text-blue-600"
               href="https://macaw.email"
             >
-              Read about it &rarr;
+              Learn more &rarr;
             </a>
           </div>
         </div>
