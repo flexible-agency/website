@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <header className="bg-white">
-      <div className="flex flex-wrap items-center text-gray-600 justify-between p-4 mx-auto md:p-8">
+      <div className="flex flex-wrap items-center text-gray-600 justify-between py-4 px-6 mx-auto md:p-8">
         <Link to="/" title={site.siteMetadata.title}>
           <h1 className="flex items-center no-underline text-gray-900 ">
             <svg
