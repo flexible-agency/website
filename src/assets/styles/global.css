@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "yyx";
+  src: url("../fonts/regular.eot");
+  src: url("../fonts/regular.woff") format("woff"),
+    url("../fonts/regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "yyx";
+  src: url("../fonts/semibold.eot");
+  src: url("../fonts/semibold.woff") format("woff"),
+    url("../fonts/semibold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "yyx";
+  src: url("../fonts/bold.woff") format("woff"),
+    url("../fonts/bold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

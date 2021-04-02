@@ -1,6 +1,13 @@
-// See https://tailwindcss.com/docs/configuration for details
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   purge: ["./src/**/*.js"],
-  // https://github.com/tailwindlabs/tailwindcss-forms
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["yyx", ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
 };

@@ -1,23 +1,22 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import abductionIllustration from "../images/abduction-illustration.svg";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
+import { Link } from "gatsby";
 
 function NotFoundPage() {
   return (
     <Layout>
-      <SEO title="404: Not found" />
-      <div>
-        <img
-          alt="Ghost getting abducted by aliens"
-          className="block mx-auto w-1/2"
-          src={abductionIllustration}
-        />
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Looks like this page is a ghost that got abducted by aliens...
+      <SEO title="Not found" />
+
+      <section>
+        <h2 className="text-3xl font-bold inline-block mb-4">
+          Sorry, there&apos;s nothing here...
         </h2>
-      </div>
+        <p className="prose">
+          Let&apos;s go <Link to="/">back home</Link>.
+        </p>
+      </section>
     </Layout>
   );
 }

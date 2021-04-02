@@ -1,40 +1,63 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 function IndexPage() {
   return (
     <Layout>
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
-      />
+      <SEO title="Helping you build better apps" />
 
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
+      <section>
+        <h1 className="text-4xl md:text-7xl font-extrabold leading-tight md:leading-tight mb-2 md:mb-5">
+          Helping you build better apps
+        </h1>
 
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
+        <p className="text-xl md:text-2xl leading-relaxed md:leading-relaxed mb-12 md:mb-20">
+          We build tools and libraries for developers to simplify developing
+          amazing apps for users.
         </p>
+
+        <div
+          className="rounded-lg bg-blue-100 bg-contain bg-right bg-no-repeat relative overflow-hidden mb-10"
+          style={{
+            backgroundImage: `url(${require("../assets/images/cover-thumbnails-cloud.svg")})`,
+          }}
+        >
+          <div className="w-1/2 p-10 md:p-16 relative z-20">
+            <h2 className="text-2xl font-bold mb-3">Thumbnails Cloud</h2>
+            <p className="text-lg mb-12">
+              Generate image previews for more than 50 file types on the fly.
+            </p>
+            <a
+              className="font-semibold text-blue-600"
+              href="https://thumbnails.cloud"
+            >
+              Get started &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="rounded-lg bg-yellow-100 bg-contain bg-right bg-no-repeat relative overflow-hidden mb-10"
+          style={{
+            backgroundImage: `url(${require("../assets/images/cover-macaw.svg")})`,
+          }}
+        >
+          <div className="w-1/2 p-10 md:p-16 relative z-20">
+            <h2 className="text-2xl font-bold mb-3">Macaw</h2>
+            <p className="text-lg mb-12">
+              A toolkit for sending transactional emails with simple templates.
+            </p>
+            <a
+              className="font-semibold text-blue-600"
+              href="https://macaw.email"
+            >
+              Read about it &rarr;
+            </a>
+          </div>
+        </div>
+
       </section>
     </Layout>
   );

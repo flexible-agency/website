@@ -5,37 +5,37 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: "Flexible Agency",
+    description: "We build tools and libraries for developers.",
+    author: "@tschoffelen",
   },
   plugins: [
-    `gatsby-plugin-eslint`,
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-eslint",
+    "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
-        start_url: `/`,
+        name: "Flexible Agency",
+        short_name: "Flexible Agency",
+        start_url: "/",
+        lang: "en",
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.green["500"],
-        display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        theme_color: fullConfig.theme.colors.gray["900"],
+        display: "minimal-ui",
+        icon: "src/assets/images/icon.png",
       },
     },
     {
-      resolve: `gatsby-plugin-postcss`,
+      resolve: "gatsby-plugin-postcss",
       options: {
         postCssPlugins: [
-          require(`tailwindcss`)(tailwindConfig),
-          require(`autoprefixer`),
-          ...(process.env.NODE_ENV === `production`
-            ? [require(`cssnano`)]
+          require("tailwindcss")(tailwindConfig),
+          require("autoprefixer"),
+          ...(process.env.NODE_ENV === "production"
+            ? [require("cssnano")]
             : []),
         ],
       },
     },
-    `gatsby-plugin-offline`,
   ],
 };
