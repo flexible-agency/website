@@ -14,8 +14,8 @@ function IndexPage() {
         </h1>
 
         <p className="text-xl md:text-2xl leading-relaxed md:leading-relaxed mb-12 md:mb-20">
-          We build tools and libraries for developers to simplify developing
-          amazing apps for users.
+          We build tools and libraries for developers to simplify creating
+          amazing web and mobile apps.
         </p>
 
         <div
