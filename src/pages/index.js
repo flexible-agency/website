@@ -19,10 +19,9 @@ function IndexPage() {
         </p>
 
         <div
-          className="rounded-lg bg-blue-100 bg-right bg-no-repeat relative overflow-hidden mb-10"
+          className="rounded-lg bg-blue-100 bg-center bg-cover bg-no-repeat relative overflow-hidden mb-10"
           style={{
-            backgroundImage: `url(${require("../assets/images/cover-thumbnails-cloud.svg")})`,
-            backgroundSize: 'auto 100%'
+            backgroundImage: `url(${require("../assets/images/cover-thumbnails-cloud.svg")})`
           }}
         >
           <div className="w-1/2 p-10 md:p-16 relative z-20">
