@@ -7,6 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
+    "deploy": "serverless deploy",
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different \"**/*.{css,js,jsx,json,md}\"",
     "analyze": "npm run analyze:lint && npm run analyze:prettier",
@@ -38,6 +39,9 @@
     "gatsby-plugin-eslint": "2.0.8",
     "postcss": "8.2.8",
     "prettier": "2.2.1",
+    "serverless": "^2.32.1",
+    "serverless-cloudfront-invalidate": "^1.8.0",
+    "serverless-s3-sync": "^1.17.0",
     "tailwindcss": "2.0.4"
   },
   "repository": {

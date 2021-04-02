@@ -1,0 +1,26 @@
+service: flexible-website
+
+plugins:
+  - serverless-s3-sync
+  - serverless-cloudfront-invalidate
+
+custom:
+  s3Sync:
+    - bucketName: flexible.agency
+      localDir: public/
+      acl: public-read
+      followSymlinks: true
+      defaultContentType: text/html
+
+  cloudfrontInvalidate:
+    - distributionId: E2HGKWAPBSZQCL
+      items:
+        - "/"
+        - "/*"
+        - "/page-data/index/page-data.json"
+
+# Provider config
+provider:
+  name: aws
+  stage: production
+  region: eu-west-1
