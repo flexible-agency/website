@@ -1,10 +1,10 @@
 import React from "react";
+import { Link, navigate } from "gatsby";
 import { useLocation } from "@reach/router";
 import queryString from "query-string";
 
 import Header from "../../components/Header";
 import SEO from "../../components/SEO";
-import { Link } from "gatsby";
 
 const getApiKey = (location) => {
   if (!location.search) {
@@ -19,6 +19,11 @@ function ThumbnailsCloudSubscribedPage() {
   const location = useLocation();
   const apiKey = getApiKey(location);
 
+  if(!apiKey){
+    navigate('/thumbnails-cloud/', { replace: true }).then();
+    return null
+  }
+
   return (
     <div className="flex flex-col min-h-screen font-sans leading-normal text-gray-900">
       <SEO title="File thumbnails API" siteTitle="Thumbnails Cloud" />
@@ -29,7 +34,7 @@ function ThumbnailsCloudSubscribedPage() {
             <>
               <a
                 className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
-                href="/thumbnails-cloud/#usage"
+                href={"/thumbnails-cloud/#usage"}
               >
                 Documentation
               </a>
