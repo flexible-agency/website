@@ -14,6 +14,12 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "G-L9H91W81GR",
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "Flexible Agency",
