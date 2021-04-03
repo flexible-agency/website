@@ -1,8 +1,8 @@
-import { useStaticQuery, graphql } from "gatsby";
-import React from "react";
-import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
-function SEO({ description, lang = "en", siteTitle, meta = [], title }) {
+function SEO({ description, lang = 'en', siteTitle, meta = [], children = [], title }) {
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {
@@ -58,8 +58,9 @@ function SEO({ description, lang = "en", siteTitle, meta = [], title }) {
         },
       ].concat(meta)}
       title={title}
-      titleTemplate={`%s | ${siteTitle}`}
-    />
+      titleTemplate={`%s | ${siteTitle}`}>
+      {children}
+    </Helmet>
   );
 }
 
