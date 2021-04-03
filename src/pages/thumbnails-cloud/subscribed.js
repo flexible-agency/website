@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { navigate } from "gatsby";
 import { useLocation } from "@reach/router";
 import queryString from "query-string";
@@ -19,12 +19,11 @@ function ThumbnailsCloudSubscribedPage() {
   const location = useLocation();
   const apiKey = getApiKey(location);
 
-  if (!apiKey) {
-    if (typeof window !== "undefined") {
+  useEffect(() => {
+    if (!apiKey && typeof window !== "undefined") {
       navigate('/thumbnails-cloud/', { replace: true }).then();
     }
-    return null;
-  }
+  }, [apiKey]);
 
   return (
     <div className="flex flex-col min-h-screen font-sans leading-normal text-gray-900">
