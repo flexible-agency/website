@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, navigate } from "gatsby";
+import { navigate } from "gatsby";
 import { useLocation } from "@reach/router";
 import queryString from "query-string";
 
@@ -80,12 +80,12 @@ function ThumbnailsCloudSubscribedPage() {
             </pre>
           </div>
 
-          <Link
-            to="/thumbnails-cloud/#usage"
+          <a
+            href={"/thumbnails-cloud/#usage"}
             className="text-blue-500 underline"
           >
             More details
-          </Link>
+          </a>
         </section>
       </main>
     </div>
