@@ -19,9 +19,9 @@ function ThumbnailsCloudSubscribedPage() {
   const location = useLocation();
   const apiKey = getApiKey(location);
 
-  if(!apiKey){
+  if (!apiKey) {
     navigate('/thumbnails-cloud/', { replace: true }).then();
-    return null
+    return null;
   }
 
   return (
