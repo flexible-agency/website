@@ -3,6 +3,8 @@ import React from "react";
 import Header from "../../components/Header";
 import SEO from "../../components/SEO";
 
+import Cover from "../../assets/images/cover-thumbnails-cloud.svg";
+
 function ThumbnailsCloudPage() {
   return (
     <div className="flex flex-col min-h-screen font-sans leading-normal text-gray-900">
@@ -44,7 +46,7 @@ function ThumbnailsCloudPage() {
       <div
         className="bg-blue-100 bg-center bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(${require("../../assets/images/cover-thumbnails-cloud.svg")})`,
+          backgroundImage: `url(${Cover})`,
         }}
       >
         <Header

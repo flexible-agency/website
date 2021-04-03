@@ -4,6 +4,9 @@ import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import { Link } from "gatsby";
 
+import ThumbnailsCover from "../assets/images/cover-thumbnails-cloud.svg";
+import MacawCover from "../assets/images/cover-macaw.svg";
+
 function IndexPage() {
   return (
     <Layout>
@@ -22,7 +25,7 @@ function IndexPage() {
         <div
           className="rounded-lg bg-blue-100 bg-center bg-cover bg-no-repeat relative overflow-hidden mb-10"
           style={{
-            backgroundImage: `url(${require("../assets/images/cover-thumbnails-cloud.svg")})`,
+            backgroundImage: `url(${ThumbnailsCover})`,
           }}
         >
           <div className="w-1/2 p-10 md:p-16 relative z-20">
@@ -42,7 +45,7 @@ function IndexPage() {
         <div
           className="rounded-lg bg-yellow-100 bg-contain bg-right bg-no-repeat relative overflow-hidden mb-10"
           style={{
-            backgroundImage: `url(${require("../assets/images/cover-macaw.svg")})`,
+            backgroundImage: `url(${MacawCover})`,
           }}
         >
           <div className="w-1/2 p-10 md:p-16 relative z-20">
