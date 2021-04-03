@@ -20,7 +20,9 @@ function ThumbnailsCloudSubscribedPage() {
   const apiKey = getApiKey(location);
 
   if (!apiKey) {
-    navigate('/thumbnails-cloud/', { replace: true }).then();
+    if (typeof window !== "undefined") {
+      navigate('/thumbnails-cloud/', { replace: true }).then();
+    }
     return null;
   }
 
