@@ -8,7 +8,7 @@ module.exports = {
     title: "Flexible Agency",
     description: "We build tools and libraries for developers.",
     author: "@tschoffelen",
-    siteUrl: "https://flexible.agency/"
+    siteUrl: "https://flexible.agency/",
   },
   plugins: [
     "gatsby-plugin-eslint",
@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {
-        trackingIds: "G-L9H91W81GR",
+        trackingIds: ["G-L9H91W81GR"],
       },
     },
     {

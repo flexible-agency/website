@@ -190,103 +190,104 @@ function ThumbnailsCloudPage() {
             Usage
           </h2>
           <div className="prose">
-          <p>URL structure:</p>
-          <pre className="rounded bg-gray-200 mt-2 mb-5 p-4 px-5">
-            <code>{`https://thumbnails.cloud/v1/jpg
+            <p>URL structure:</p>
+            <pre className="rounded bg-gray-200 mt-2 mb-5 p-4 px-5">
+              <code>{`https://thumbnails.cloud/v1/jpg
   ?token=your-api-token
   &url=https://example.com/my-file.doc
   &size=600
   &mode=crop`}</code>
-          </pre>
+            </pre>
 
-          <table className="is-bordered">
-            <thead>
-              <tr className="text-sm">
-                <th>Parameter</th>
-                <th>Required</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody className="prose">
-              <tr>
-                <td>
-                  <code>url</code>
-                </td>
-                <td>✅</td>
-                <td>
-                  The URL of the original document. Should be publicly available
-                  via HTTP or HTTPS. Make sure to{" "}
-                  <a
-                    href="https://en.wikipedia.org/wiki/Percent-encoding"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    urlencode
-                  </a>{" "}
-                  your URL!
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>token</code>
-                </td>
-                <td>✅</td>
-                <td>Your API token. Sign up above.</td>
-              </tr>
-              <tr>
-                <td>
-                  <code>size</code>
-                </td>
-                <td />
-                <td>
-                  Pixel width of your thumbnail. Defaults to <code>600</code>.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>mode</code>
-                </td>
-                <td />
-                <td>
-                  Specify <code>crop</code> to get a square image, or{" "}
-                  <code>orig</code> to maintain original aspect ratio. Defaults
-                  to <code>crop</code>.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>gravity</code>
-                </td>
-                <td />
-                <td>
-                  For documents, specify where the gravity lies for cropping.
-                  Options: <code>North</code>, <code>South</code>,{" "}
-                  <code>East</code>, <code>West</code>.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>format</code>
-                </td>
-                <td />
-                <td>
-                  By default, an image is returned. Specify <code>json</code> to
-                  get back a base64 encoded version in a JSON object.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>offset</code>
-                </td>
-                <td />
-                <td>
-                  For videos, specify a second offset to use for the thumbnail.
-                  Defaults to <code>0</code>. If you specify a offset higher
-                  than the duration of the video, the conversion will fail.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <table className="is-bordered">
+              <thead>
+                <tr className="text-sm">
+                  <th>Parameter</th>
+                  <th>Required</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody className="prose">
+                <tr>
+                  <td>
+                    <code>url</code>
+                  </td>
+                  <td>✅</td>
+                  <td>
+                    The URL of the original document. Should be publicly
+                    available via HTTP or HTTPS. Make sure to{" "}
+                    <a
+                      href="https://en.wikipedia.org/wiki/Percent-encoding"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      urlencode
+                    </a>{" "}
+                    your URL!
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>token</code>
+                  </td>
+                  <td>✅</td>
+                  <td>Your API token. Sign up above.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>size</code>
+                  </td>
+                  <td />
+                  <td>
+                    Pixel width of your thumbnail. Defaults to <code>600</code>.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>mode</code>
+                  </td>
+                  <td />
+                  <td>
+                    Specify <code>crop</code> to get a square image, or{" "}
+                    <code>orig</code> to maintain original aspect ratio.
+                    Defaults to <code>crop</code>.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>gravity</code>
+                  </td>
+                  <td />
+                  <td>
+                    For documents, specify where the gravity lies for cropping.
+                    Options: <code>North</code>, <code>South</code>,{" "}
+                    <code>East</code>, <code>West</code>.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>format</code>
+                  </td>
+                  <td />
+                  <td>
+                    By default, an image is returned. Specify <code>json</code>{" "}
+                    to get back a base64 encoded version in a JSON object.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>offset</code>
+                  </td>
+                  <td />
+                  <td>
+                    For videos, specify a second offset to use for the
+                    thumbnail. Defaults to <code>0</code>. If you specify a
+                    offset higher than the duration of the video, the conversion
+                    will fail.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">
