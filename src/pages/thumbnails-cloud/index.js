@@ -7,18 +7,39 @@ function ThumbnailsCloudPage() {
   return (
     <div className="flex flex-col min-h-screen font-sans leading-normal text-gray-900">
       <SEO title="File thumbnails API" siteTitle="Thumbnails Cloud">
-        <meta name="description" content="The simplest API for generating file thumbnails that you've ever seen."/>
-        <meta property="og:url" content="https://flexible.agency/thumbnails-cloud/"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Thumbnails Cloud · File Previews API"/>
-        <meta property="og:description" content="The simplest API for generating file thumbnails that you've ever seen."/>
-        <meta property="og:site_name" content="Thumbnails Cloud"/>
-        <meta property="og:locale" content="en"/>
-        <meta property="og:locale:alternate" content="en"/>
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:url" content="https://flexible.agency/thumbnails-cloud/"/>
-        <meta name="twitter:title" content="Thumbnails Cloud · File Previews API"/>
-        <meta name="twitter:description" content="The simplest API for generating file thumbnails that you've ever seen."/>
+        <meta
+          name="description"
+          content="The simplest API for generating file thumbnails that you've ever seen."
+        />
+        <meta
+          property="og:url"
+          content="https://flexible.agency/thumbnails-cloud/"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Thumbnails Cloud · File Previews API"
+        />
+        <meta
+          property="og:description"
+          content="The simplest API for generating file thumbnails that you've ever seen."
+        />
+        <meta property="og:site_name" content="Thumbnails Cloud" />
+        <meta property="og:locale" content="en" />
+        <meta property="og:locale:alternate" content="en" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:url"
+          content="https://flexible.agency/thumbnails-cloud/"
+        />
+        <meta
+          name="twitter:title"
+          content="Thumbnails Cloud · File Previews API"
+        />
+        <meta
+          name="twitter:description"
+          content="The simplest API for generating file thumbnails that you've ever seen."
+        />
       </SEO>
       <div
         className="bg-blue-100 bg-center bg-cover bg-no-repeat"
@@ -26,20 +47,25 @@ function ThumbnailsCloudPage() {
           backgroundImage: `url(${require("../../assets/images/cover-thumbnails-cloud.svg")})`,
         }}
       >
-        <Header title="Thumbnails Cloud" menu={<>
-          <a
-            className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
-            href="#usage"
-          >
-            Documentation
-          </a>
-          <a
-            className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
-            href="mailto:info@flexible.agency"
-          >
-            Contact
-          </a>
-        </>} />
+        <Header
+          title="Thumbnails Cloud"
+          menu={
+            <>
+              <a
+                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
+                href={"#usage"}
+              >
+                Documentation
+              </a>
+              <a
+                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
+                href="mailto:info@flexible.agency"
+              >
+                Contact
+              </a>
+            </>
+          }
+        />
         <main className="flex-1 w-full max-w-3xl px-6 py-8 mx-auto md:px-8 md:py-16 pr-40 md:pr-16">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight md:leading-tight mb-2 md:mb-5">
             Generate file thumbnails on the fly
@@ -51,7 +77,8 @@ function ThumbnailsCloudPage() {
           <a
             className="inline-block py-3 mb-6 font-bold text-lg px-6 bg-gray-900 text-white rounded hover:bg-blue-800"
             href="https://schofco.chargebee.com/hosted_pages/plans/thumbnails-cloud"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             Get your API key
           </a>
@@ -158,8 +185,10 @@ function ThumbnailsCloudPage() {
             </tbody>
           </table>
 
-          <a name="usage"/>
-          <h2 id="usage" className="text-2xl font-bold mt-10 mb-3">Usage</h2>
+          <a name="usage" />
+          <h2 id="usage" className="text-2xl font-bold mt-10 mb-3">
+            Usage
+          </h2>
           <p className="prose">URL structure:</p>
           <pre className="rounded bg-gray-200 mt-2 mb-5 p-4 px-5">
             <code>{`https://thumbnails.cloud/v1/jpg
@@ -182,9 +211,7 @@ function ThumbnailsCloudPage() {
                 <td>
                   <code>url</code>
                 </td>
-                <td>
-                  ✅
-                </td>
+                <td>✅</td>
                 <td>
                   The URL of the original document. Should be publicly available
                   via HTTP or HTTPS. Make sure to{" "}
@@ -202,17 +229,14 @@ function ThumbnailsCloudPage() {
                 <td>
                   <code>token</code>
                 </td>
-                <td>
-                  ✅
-                </td>
+                <td>✅</td>
                 <td>Your API token. Sign up above.</td>
               </tr>
               <tr>
                 <td>
                   <code>size</code>
                 </td>
-                <td>
-                </td>
+                <td />
                 <td>
                   Pixel width of your thumbnail. Defaults to <code>600</code>.
                 </td>
@@ -221,9 +245,7 @@ function ThumbnailsCloudPage() {
                 <td>
                   <code>mode</code>
                 </td>
-                <td>
-
-                </td>
+                <td />
                 <td>
                   Specify <code>crop</code> to get a square image, or{" "}
                   <code>orig</code> to maintain original aspect ratio. Defaults
@@ -234,9 +256,7 @@ function ThumbnailsCloudPage() {
                 <td>
                   <code>gravity</code>
                 </td>
-                <td>
-
-                </td>
+                <td />
                 <td>
                   For documents, specify where the gravity lies for cropping.
                   Options: <code>North</code>, <code>South</code>,{" "}
@@ -247,9 +267,7 @@ function ThumbnailsCloudPage() {
                 <td>
                   <code>format</code>
                 </td>
-                <td>
-
-                </td>
+                <td />
                 <td>
                   By default, an image is returned. Specify <code>json</code> to
                   get back a base64 encoded version in a JSON object.
@@ -259,9 +277,7 @@ function ThumbnailsCloudPage() {
                 <td>
                   <code>offset</code>
                 </td>
-                <td>
-
-                </td>
+                <td />
                 <td>
                   For videos, specify a second offset to use for the thumbnail.
                   Defaults to <code>0</code>. If you specify a offset higher

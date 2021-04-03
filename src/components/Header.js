@@ -53,7 +53,9 @@ function Header({ title, menu }) {
               : `hidden`
           } md:block md:items-center text-sm w-full md:w-auto`}
         >
-          {menu ? menu : (
+          {menu ? (
+            menu
+          ) : (
             <>
               <a
                 className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
