@@ -30,3 +30,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.is-bordered th,
+.is-bordered td {
+  @apply border border-gray-200 px-3 py-2 text-left;
+  vertical-align: top;
+}

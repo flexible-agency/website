@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import { Link } from 'gatsby';
 
 function IndexPage() {
   return (
@@ -21,7 +22,7 @@ function IndexPage() {
         <div
           className="rounded-lg bg-blue-100 bg-center bg-cover bg-no-repeat relative overflow-hidden mb-10"
           style={{
-            backgroundImage: `url(${require("../assets/images/cover-thumbnails-cloud.svg")})`
+            backgroundImage: `url(${require("../assets/images/cover-thumbnails-cloud.svg")})`,
           }}
         >
           <div className="w-1/2 p-10 md:p-16 relative z-20">
@@ -29,12 +30,12 @@ function IndexPage() {
             <p className="text-lg mb-12">
               Generate image previews for more than 50 file types on the fly.
             </p>
-            <a
+            <Link
               className="font-semibold text-blue-600"
-              href="https://thumbnails.cloud"
+              to="/thumbnails-cloud"
             >
               Get started &rarr;
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -57,7 +58,6 @@ function IndexPage() {
             </a>
           </div>
         </div>
-
       </section>
     </Layout>
   );
