@@ -8,6 +8,7 @@ module.exports = {
     title: "Flexible Agency",
     description: "We build tools and libraries for developers.",
     author: "@tschoffelen",
+    siteUrl: "https://flexible.agency/"
   },
   plugins: [
     "gatsby-plugin-eslint",
