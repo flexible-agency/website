@@ -15,9 +15,9 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: "gatsby-plugin-google-gtag",
       options: {
-        id: "G-L9H91W81GR",
+        trackingIds: "G-L9H91W81GR",
       },
     },
     {

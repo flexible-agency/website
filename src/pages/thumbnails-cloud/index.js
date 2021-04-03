@@ -189,7 +189,8 @@ function ThumbnailsCloudPage() {
           <h2 id="usage" className="text-2xl font-bold mt-10 mb-3">
             Usage
           </h2>
-          <p className="prose">URL structure:</p>
+          <div className="prose">
+          <p>URL structure:</p>
           <pre className="rounded bg-gray-200 mt-2 mb-5 p-4 px-5">
             <code>{`https://thumbnails.cloud/v1/jpg
   ?token=your-api-token
@@ -286,6 +287,7 @@ function ThumbnailsCloudPage() {
               </tr>
             </tbody>
           </table>
+          </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">
             Supported file extensions
