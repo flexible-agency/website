@@ -59,7 +59,7 @@ function Header({ title, menu }) {
             <>
               <a
                 className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
-                href="https://leanmotherfuckers.com/?utm_source=flexible-agency-website"
+                href="https://calendly.com/tschof/consulting-30-mins?utm_source=flexible-agency-website"
               >
                 Consultancy
               </a>
