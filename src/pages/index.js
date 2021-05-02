@@ -61,6 +61,28 @@ function IndexPage() {
             </a>
           </div>
         </div>
+        <div className="rounded-lg bg-gray-100 bg-contain bg-right bg-no-repeat relative overflow-hidden mb-10">
+          <div className="p-10 md:p-16 relative z-20">
+            <h2 className="text-2xl font-bold mb-3">Consulting</h2>
+            <p className="text-lg mb-12">
+              I&apos;m happy to help you with anything else related to tech architecture or strategy.
+            </p>
+            <div className="flex flex-wrap">
+            <a
+              className="font-semibold text-blue-600 mt-4 mr-6"
+              href="https://calendly.com/tschof/consulting-30-mins?utm_source=flexible-agency-website"
+            >
+              Book a 30 minute session &rarr;
+            </a>
+              <a
+                className="font-semibold text-blue-600 mt-4 mr-6"
+                href="https://calendly.com/tschof/consulting?utm_source=flexible-agency-website"
+              >
+                Book a 1 hour session &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </Layout>
   );
