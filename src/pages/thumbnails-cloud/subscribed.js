@@ -23,6 +23,9 @@ function ThumbnailsCloudSubscribedPage() {
     if (!apiKey && typeof window !== "undefined") {
       navigate('/thumbnails-cloud/', { replace: true }).then();
     }
+    if (apiKey && typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', { 'send_to': 'AW-10784498299/6y_4CKSxyvsCEPvEuZYo' });
+    }
   }, [apiKey]);
 
   return (
