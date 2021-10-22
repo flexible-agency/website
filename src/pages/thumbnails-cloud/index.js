@@ -93,7 +93,7 @@ function ThumbnailsCloudPage() {
 
           <p className="prose">
             The thumbnails.cloud API generates JPEG file previews for all common
-            document formats, using a simple API. Get an API token for $8/mo for
+            document formats, using a simple API. Get an API token for $12/mo for
             personal and small-scale projects, and create an unlimited number of
             preview images! For large-scale and enterprise licensing, please{" "}
             <a href="mailto:info@schof.co?subject=Thumbnails%20Cloud%20pricing%20inquiry">
