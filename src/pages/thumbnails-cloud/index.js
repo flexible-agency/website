@@ -278,6 +278,16 @@ function ThumbnailsCloudPage() {
                 </tr>
                 <tr>
                   <td>
+                    <code>quality</code>
+                  </td>
+                  <td />
+                  <td>
+                    Specify a JPEG compression quality. Requires a number between 1-100.
+                    Defaults to <code>80</code>.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
                     <code>offset</code>
                   </td>
                   <td />
