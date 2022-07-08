@@ -1,55 +1,55 @@
 import React from "react";
+import Head from "next/head";
 
 import Header from "../../components/Header";
 
-// import SEO from "../../components/SEO";
-
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   return {
     props: {
-      fullScreen: true
+      fullScreen: true,
     },
-  }
+  };
 }
 
 function ThumbnailsCloudPage() {
   return (
     <div className="flex flex-col min-h-screen font-sans leading-normal text-gray-900">
-      {/*<SEO title="File thumbnails API" siteTitle="Thumbnails Cloud">*/}
-      {/*  <meta*/}
-      {/*    name="description"*/}
-      {/*    content="The simplest API for generating file thumbnails that you've ever seen."*/}
-      {/*  />*/}
-      {/*  <meta*/}
-      {/*    property="og:url"*/}
-      {/*    content="https://includable.com/thumbnails-cloud/"*/}
-      {/*  />*/}
-      {/*  <meta property="og:type" content="website" />*/}
-      {/*  <meta*/}
-      {/*    property="og:title"*/}
-      {/*    content="Thumbnails Cloud · File Previews API"*/}
-      {/*  />*/}
-      {/*  <meta*/}
-      {/*    property="og:description"*/}
-      {/*    content="The simplest API for generating file thumbnails that you've ever seen."*/}
-      {/*  />*/}
-      {/*  <meta property="og:site_name" content="Thumbnails Cloud" />*/}
-      {/*  <meta property="og:locale" content="en" />*/}
-      {/*  <meta property="og:locale:alternate" content="en" />*/}
-      {/*  <meta name="twitter:card" content="summary_large_image" />*/}
-      {/*  <meta*/}
-      {/*    name="twitter:url"*/}
-      {/*    content="https://includable.com/thumbnails-cloud/"*/}
-      {/*  />*/}
-      {/*  <meta*/}
-      {/*    name="twitter:title"*/}
-      {/*    content="Thumbnails Cloud · File Previews API"*/}
-      {/*  />*/}
-      {/*  <meta*/}
-      {/*    name="twitter:description"*/}
-      {/*    content="The simplest API for generating file thumbnails that you've ever seen."*/}
-      {/*  />*/}
-      {/*</SEO>*/}
+      <Head>
+        <title>Thumbnails Cloud | File thumbnails API</title>
+        <meta
+          name="description"
+          content="The simplest API for generating file thumbnails that you've ever seen."
+        />
+        <meta
+          property="og:url"
+          content="https://includable.com/thumbnails-cloud/"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Thumbnails Cloud · File Previews API"
+        />
+        <meta
+          property="og:description"
+          content="The simplest API for generating file thumbnails that you've ever seen."
+        />
+        <meta property="og:site_name" content="Thumbnails Cloud" />
+        <meta property="og:locale" content="en" />
+        <meta property="og:locale:alternate" content="en" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:url"
+          content="https://includable.com/thumbnails-cloud/"
+        />
+        <meta
+          name="twitter:title"
+          content="Thumbnails Cloud · File Previews API"
+        />
+        <meta
+          name="twitter:description"
+          content="The simplest API for generating file thumbnails that you've ever seen."
+        />
+      </Head>
       <div
         className="bg-blue-100 bg-center bg-cover bg-no-repeat"
         style={{

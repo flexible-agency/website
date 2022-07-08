@@ -1,10 +1,6 @@
 import React from "react";
 
-import Header from "../../components/Header";
-
-// import SEO from "../../components/SEO";
-
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   return {
     props: {
       menuTitle: 'Macaw Email'

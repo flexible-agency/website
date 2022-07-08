@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 
-// import SEO from "../../components/SEO";
-
 const getApiKey = (router) => router?.query?.id?.replace("sub_", "");
 
 function ThumbnailsCloudSubscribedPage() {

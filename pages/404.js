@@ -1,12 +1,13 @@
 import React from "react";
 import Link from "next/link";
-
-// import SEO from "../components/SEO";
+import Head from "next/head";
 
 function NotFoundPage() {
   return (
     <>
-      {/*<SEO title="Not found" />*/}
+      <Head>
+        <title>Not found</title>
+      </Head>
 
       <h2 className="text-3xl font-bold inline-block mb-4">
         Sorry, there&apos;s nothing here...

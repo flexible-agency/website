@@ -1,11 +1,33 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 function Header({ title, menu }) {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
     <header>
+      <Head>
+        <title>{title || "Helping you build better apps"} | Includable</title>
+        <meta name="revisit-after" content="1 day" />
+        <meta name="robots" content="index,follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta httpEquiv="content-language" content="en" />
+        <meta name="language" content="English" />
+        <meta
+          name="description"
+          content="An agency of design-minded people-people, building mobile apps and web platforms using the latest technologies, like React, React Native, and Serverless."
+        />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="https://includable.com/favicon.ico"
+        />
+      </Head>
       <div className="flex flex-wrap items-center text-gray-600 justify-between py-4 px-6 mx-auto md:p-8">
         <Link href="/">
           <a title="Includable">

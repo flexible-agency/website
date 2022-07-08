@@ -1,12 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-// import SEO from "../components/SEO";
-
 function IndexPage() {
   return (
     <>
-      {/*<SEO title="Helping you build better apps" />*/}
       <h1 className="text-4xl md:text-7xl font-extrabold leading-tight md:leading-tight mb-2 md:mb-5">
         Helping you build better apps
       </h1>
