@@ -1,52 +1,59 @@
 import React from "react";
 
 import Header from "../../components/Header";
-import SEO from "../../components/SEO";
 
-import Cover from "../../assets/images/cover-thumbnails-cloud.svg";
+// import SEO from "../../components/SEO";
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      fullScreen: true
+    },
+  }
+}
 
 function ThumbnailsCloudPage() {
   return (
     <div className="flex flex-col min-h-screen font-sans leading-normal text-gray-900">
-      <SEO title="File thumbnails API" siteTitle="Thumbnails Cloud">
-        <meta
-          name="description"
-          content="The simplest API for generating file thumbnails that you've ever seen."
-        />
-        <meta
-          property="og:url"
-          content="https://flexible.agency/thumbnails-cloud/"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Thumbnails Cloud · File Previews API"
-        />
-        <meta
-          property="og:description"
-          content="The simplest API for generating file thumbnails that you've ever seen."
-        />
-        <meta property="og:site_name" content="Thumbnails Cloud" />
-        <meta property="og:locale" content="en" />
-        <meta property="og:locale:alternate" content="en" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:url"
-          content="https://flexible.agency/thumbnails-cloud/"
-        />
-        <meta
-          name="twitter:title"
-          content="Thumbnails Cloud · File Previews API"
-        />
-        <meta
-          name="twitter:description"
-          content="The simplest API for generating file thumbnails that you've ever seen."
-        />
-      </SEO>
+      {/*<SEO title="File thumbnails API" siteTitle="Thumbnails Cloud">*/}
+      {/*  <meta*/}
+      {/*    name="description"*/}
+      {/*    content="The simplest API for generating file thumbnails that you've ever seen."*/}
+      {/*  />*/}
+      {/*  <meta*/}
+      {/*    property="og:url"*/}
+      {/*    content="https://includable.com/thumbnails-cloud/"*/}
+      {/*  />*/}
+      {/*  <meta property="og:type" content="website" />*/}
+      {/*  <meta*/}
+      {/*    property="og:title"*/}
+      {/*    content="Thumbnails Cloud · File Previews API"*/}
+      {/*  />*/}
+      {/*  <meta*/}
+      {/*    property="og:description"*/}
+      {/*    content="The simplest API for generating file thumbnails that you've ever seen."*/}
+      {/*  />*/}
+      {/*  <meta property="og:site_name" content="Thumbnails Cloud" />*/}
+      {/*  <meta property="og:locale" content="en" />*/}
+      {/*  <meta property="og:locale:alternate" content="en" />*/}
+      {/*  <meta name="twitter:card" content="summary_large_image" />*/}
+      {/*  <meta*/}
+      {/*    name="twitter:url"*/}
+      {/*    content="https://includable.com/thumbnails-cloud/"*/}
+      {/*  />*/}
+      {/*  <meta*/}
+      {/*    name="twitter:title"*/}
+      {/*    content="Thumbnails Cloud · File Previews API"*/}
+      {/*  />*/}
+      {/*  <meta*/}
+      {/*    name="twitter:description"*/}
+      {/*    content="The simplest API for generating file thumbnails that you've ever seen."*/}
+      {/*  />*/}
+      {/*</SEO>*/}
       <div
         className="bg-blue-100 bg-center bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(${Cover})`,
+          backgroundImage: `url(/images/cover-thumbnails-cloud.svg)`,
         }}
       >
         <Header
@@ -61,7 +68,7 @@ function ThumbnailsCloudPage() {
               </a>
               <a
                 className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
-                href="mailto:info@flexible.agency"
+                href="mailto:hello@includable.com"
               >
                 Contact
               </a>
@@ -193,7 +200,7 @@ function ThumbnailsCloudPage() {
           </h2>
           <div className="prose">
             <p>URL structure:</p>
-            <pre className="rounded bg-gray-200 mt-2 mb-5 p-4 px-5">
+            <pre className="rounded mt-2 mb-5 p-4 px-5">
               <code>{`https://thumbnails.cloud/v1/jpg
   ?token=your-api-token
   &url=https://example.com/my-file.doc
@@ -282,8 +289,8 @@ function ThumbnailsCloudPage() {
                   </td>
                   <td />
                   <td>
-                    Specify a JPEG compression quality. Requires a number between 1-100.
-                    Defaults to <code>80</code>.
+                    Specify a JPEG compression quality. Requires a number
+                    between 1-100. Defaults to <code>80</code>.
                   </td>
                 </tr>
                 <tr>
