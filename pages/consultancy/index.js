@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 function ConsultingPage() {
   return (
     <>
-      <div className="prose prose-lg mb-10">
+      <div className="prose md:prose-lg mb-6 md:mb-10 md:mt-10">
         <h1>Tech consulting at any scale</h1>
       </div>
       <div className="prose prose-lg">
@@ -16,9 +16,9 @@ function ConsultingPage() {
         </p>
       </div>
 
-      <div className="mt-8 mb-16">
+      <div className="mt-8 mb-16 md:mb-24">
         <Button href="https://calendly.com/tschof/consulting-30-mins?utm_source=includable-website">
-          Schedule a session &nbsp;&rarr;
+          Schedule a session &nbsp;&nbsp;&rarr;
         </Button>
       </div>
 

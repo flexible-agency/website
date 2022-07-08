@@ -78,6 +78,7 @@ function Header({ title, menu }) {
               ? `block bg-white mt-3 md:mt-0 px-5 pb-3 md:pb-0 md:px-0 rounded`
               : `hidden`
           } md:block md:items-center w-full md:w-auto md:pr-1`}
+          onClick={() => toggleExpansion(false)}
         >
           {menu ? (
             menu

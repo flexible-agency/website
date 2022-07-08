@@ -2,9 +2,9 @@ import React from "react";
 
 const Button = ({children, href, ...props}) => {
   const className = `
-    inline-flex items-center px-7 py-4 border border-transparent 
+    inline-flex items-center px-5 md:px-7 py-3 md:py-4 border border-transparent 
     text-base font-semibold rounded-full shadow-sm text-white 
-    bg-gray-900 hover:bg-gray-800 focus:outline-none 
+    bg-gray-900 hover:bg-black focus:outline-none 
     focus:ring-2 focus:ring-offset-2 focus:ring-gray-500
   `.trim();
 
