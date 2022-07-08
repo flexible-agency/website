@@ -3,9 +3,9 @@ import React from "react";
 export async function getStaticProps() {
   return {
     props: {
-      menuTitle: 'Macaw Email'
+      menuTitle: "Macaw Email",
     },
-  }
+  };
 }
 
 function MaacawPage() {
@@ -38,21 +38,24 @@ function MaacawPage() {
         <h2>Introducing Macaw</h2>
         <p>
           That’s why we have built a toolkit named{" "}
-          <a href="https://github.com/includable/macaw">Macaw</a>.
-          It builds on the experience we’ve gained setting up transactional
-          emails at scale for companies like <a href="https://near.st/">NearSt</a> and{" "}
+          <a href="https://github.com/includable/macaw">Macaw</a>. It builds on
+          the experience we’ve gained setting up transactional emails at scale
+          for companies like <a href="https://near.st/">NearSt</a> and{" "}
           <a href="https://streetartcities.com/">Street Art Cities</a>.
         </p>
-        <div className="lg:-mx-20">
-          <img
-            alt="In-browser email preview tool"
-            title="In-browser email preview tool"
-            src="/images/macaw/browser-preview.png"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
+      </div>
 
+      <div className="lg:-mx-10">
+        <img
+          alt="In-browser email preview tool"
+          title="In-browser email preview tool"
+          src="/images/macaw/browser-preview.png"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
+      <div className="prose prose-lg">
         <h2>Templating structure</h2>
         <p>
           It introduces a neat structure for managing email templates,
@@ -80,8 +83,8 @@ function MaacawPage() {
 
         <h2>The toolkit</h2>
         <p>
-          The <a href="https://github.com/includable/macaw">Macaw toolkit</a>{" "}
-          is open source and available on Github.
+          The <a href="https://github.com/includable/macaw">Macaw toolkit</a> is
+          open source and available on Github.
         </p>
         <p>It currently consists of the following tools:</p>
         <ul>

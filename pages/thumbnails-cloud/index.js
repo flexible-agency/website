@@ -75,7 +75,7 @@ function ThumbnailsCloudPage() {
             </>
           }
         />
-        <main className="flex-1 w-full max-w-3xl px-6 py-8 mx-auto md:px-8 md:py-16 pr-40 md:pr-16">
+        <main className="flex-1 w-full max-w-3xl p-8 mx-auto md:py-16 pr-40 md:pr-16">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight md:leading-tight mb-2 md:mb-5">
             Generate file thumbnails on the fly
           </h1>
@@ -94,7 +94,7 @@ function ThumbnailsCloudPage() {
         </main>
       </div>
 
-      <main className="flex-1 w-full max-w-3xl px-6 pt-8 mb-0 mx-auto md:px-8 md:pt-16">
+      <main className="flex-1 w-full max-w-3xl px-8 pt-8 mb-0 mx-auto md:pt-16">
         <section>
           <h2 className="text-2xl font-bold mt-3 mb-3">Features</h2>
 

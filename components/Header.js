@@ -8,7 +8,9 @@ function Header({ title, menu }) {
   return (
     <header>
       <Head>
-        <title>{title || "Helping you build better apps"} | Includable</title>
+        <title>{`${
+          title || "Helping you build better apps"
+        } | Includable`}</title>
         <meta name="revisit-after" content="1 day" />
         <meta name="robots" content="index,follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,14 +30,13 @@ function Header({ title, menu }) {
           href="https://includable.com/favicon.ico"
         />
       </Head>
-      <div className="flex flex-wrap items-center text-gray-600 justify-between py-4 px-6 mx-auto md:p-8">
+      <div className="flex flex-wrap items-center text-gray-600 justify-between py-6 px-8 md:py-8 mx-auto">
         <Link href="/">
           <a title="Includable">
             <h1 className="flex items-center no-underline text-gray-900">
-              <div className="p-3 -m-3">
+              <div className="p-3 -mx-3 md:-my-2">
                 <svg
-                  width="100"
-                  height="20"
+                  className="h-5 md:h-6"
                   viewBox="0 0 131 26"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -49,7 +50,7 @@ function Header({ title, menu }) {
                 <span className="sr-only">Includable</span>
               </div>
               {title && (
-                <span className="pl-4 ml-4 font-medium text-sm border-l opacity-75 border-gray-900/30">
+                <span className="pl-4 ml-4 font-medium text-sm md:text-base border-l opacity-75 border-gray-900/30">
                   {title}
                 </span>
               )}
@@ -58,7 +59,7 @@ function Header({ title, menu }) {
         </Link>
 
         <button
-          className="items-center block px-2 py-2 md:hidden"
+          className="items-center block px-2 py-2 -mr-1 md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -76,26 +77,25 @@ function Header({ title, menu }) {
             isExpanded
               ? `block bg-white mt-3 md:mt-0 px-5 pb-3 md:pb-0 md:px-0 rounded`
               : `hidden`
-          } md:block md:items-center text-sm w-full md:w-auto`}
+          } md:block md:items-center w-full md:w-auto md:pr-1`}
         >
           {menu ? (
             menu
           ) : (
             <>
+              <Link href="/consultancy">
+                <a className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-8">
+                  Consulting
+                </a>
+              </Link>
               <a
-                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
-                href="https://calendly.com/tschof/consulting-30-mins?utm_source=includable-website"
-              >
-                Consultancy
-              </a>
-              <a
-                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
+                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-8"
                 href="https://github.com/includable?utm_source=includable-website"
               >
-                Open Source
+                Open source
               </a>
               <a
-                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
+                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-8"
                 href="mailto:hello@includable.com"
               >
                 Contact
