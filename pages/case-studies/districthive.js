@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 export default function DistrictHiveCaseStudy() {
   return (
     <>
-      <h3 className="text-gray-500 md:text-lg font-bold mb-2 uppercase">
+      <h3 className="text-blue-600 md:text-lg font-bold mb-2 uppercase">
         <a href="/">Case study</a>
       </h3>
       <h1 className="text-4xl md:text-6xl max-w-3xl font-extrabold leading-tight md:leading-tight mb-2 md:mb-5">

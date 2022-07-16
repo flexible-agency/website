@@ -76,9 +76,9 @@ function Header({ title, menu }) {
         <nav
           className={`${
             isExpanded
-              ? `block bg-white mt-3 md:mt-0 px-5 pb-3 md:pb-0 md:px-0 rounded`
+              ? `block`
               : `hidden`
-          } md:block md:items-center w-full md:w-auto md:pr-1 text-gray-400`}
+          } md:block md:items-center w-full md:w-auto md:pr-1 text-gray-500`}
           onClick={() => toggleExpansion(false)}
         >
           {menu ? (
