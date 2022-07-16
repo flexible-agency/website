@@ -25,7 +25,7 @@ function IndexPage() {
             className="rounded-lg"
             quality={100}
           />
-          <div className="p-10 md:p-16 max-w-4xl bg-blue-900 bg-opacity-60 md:bg-transparent md:bg-gradient-to-r md:from-blue-900 md:pr-64 lg:pr-[30rem] rounded-lg relative z-10">
+          <div className="p-8 md:p-16 max-w-4xl bg-blue-900 bg-opacity-60 md:bg-transparent md:bg-gradient-to-r md:from-blue-900 md:pr-64 lg:pr-[30rem] rounded-lg relative z-10">
             <div className="prose text-white mb-10 lg:mb-14">
           <img
             src="/images/case-studies/districthive/logo.png"
@@ -50,7 +50,7 @@ function IndexPage() {
           backgroundImage: `url(/images/cover-thumbnails-cloud.svg)`,
         }}
       >
-        <div className="md:w-1/2 p-10 md:p-16 relative z-20">
+        <div className="md:w-1/2 p-8 md:p-16 relative z-20">
           <h2 className="text-2xl font-bold mb-3">Thumbnails Cloud</h2>
           <p className="text-lg mb-12">
             Generate image previews for more than 50 file types on the fly.
@@ -67,7 +67,7 @@ function IndexPage() {
           backgroundImage: `url(/images/cover-macaw.svg)`,
         }}
       >
-        <div className="w-2/3 md:w-1/2 p-10 md:p-16 relative z-20">
+        <div className="w-2/3 md:w-1/2 p-8 md:p-16 relative z-20">
           <h2 className="text-2xl font-bold mb-3">Macaw</h2>
           <p className="text-lg mb-12">
             A toolkit for sending transactional emails with simple templates.
@@ -78,25 +78,20 @@ function IndexPage() {
         </div>
       </div>
       <div className="rounded-lg bg-gray-100 bg-contain bg-right bg-no-repeat relative overflow-hidden mb-10">
-        <div className="p-10 md:p-16 relative z-20">
+        <div className="p-8 md:p-16 relative z-20">
           <h2 className="text-2xl font-bold mb-3">Consulting</h2>
           <p className="text-lg mb-12">
             I&apos;m happy to help you with anything else related to tech
             architecture or strategy.
           </p>
           <div className="flex flex-wrap">
+            <Link href="/consultancy">
             <a
-              className="font-semibold text-blue-600 mt-4 mr-6"
-              href="https://calendly.com/tschof/consulting-30-mins?utm_source=includable-website"
+              className="font-semibold text-blue-600 mt-4"
             >
-              Book a 30 minute session &rarr;
+              Learn more &rarr;
             </a>
-            <a
-              className="font-semibold text-blue-600 mt-4 mr-6"
-              href="https://calendly.com/tschof/consulting?utm_source=includable-website"
-            >
-              Book a 1 hour session &rarr;
-            </a>
+            </Link>
           </div>
         </div>
       </div>
