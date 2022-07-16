@@ -8,9 +8,9 @@ function IndexPage() {
         Crafting digital platforms and developer tools
       </h1>
 
-      <p className="text-xl md:text-2xl max-w-3xl leading-relaxed md:leading-relaxed mb-12 md:mb-20">
-        We build the tech that powers social enterprises in education, fashion and education,
-        and help developers with tools to create amazing web and mobile apps.
+      <p className="text-xl md:text-2xl leading-relaxed md:leading-relaxed mb-12 md:mb-20">
+        We build the tech that powers social enterprises in education, fashion and hospitality,
+        and provide developers with tools to create amazing apps.
       </p>
 
       <div
