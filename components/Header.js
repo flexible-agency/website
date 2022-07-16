@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import NavLink from "./navigation/NavLink";
 
 function Header({ title, menu }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -77,18 +78,20 @@ function Header({ title, menu }) {
             isExpanded
               ? `block bg-white mt-3 md:mt-0 px-5 pb-3 md:pb-0 md:px-0 rounded`
               : `hidden`
-          } md:block md:items-center w-full md:w-auto md:pr-1`}
+          } md:block md:items-center w-full md:w-auto md:pr-1 text-gray-400`}
           onClick={() => toggleExpansion(false)}
         >
           {menu ? (
             menu
           ) : (
             <>
-              <Link href="/consultancy">
-                <a className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-8">
-                  Consulting
-                </a>
-              </Link>
+              <NavLink
+                href="/consultancy"
+                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-8"
+                activeClassName="text-black"
+              >
+                Consulting
+              </NavLink>
               <a
                 className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-8"
                 href="https://github.com/includable?utm_source=includable-website"
