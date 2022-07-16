@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "../components/Button";
 
 function IndexPage() {
   return (
@@ -26,7 +25,7 @@ function IndexPage() {
             className="rounded-lg"
             quality={100}
           />
-          <div className="p-12 md:p-16 max-w-4xl bg-blue-900 bg-opacity-60 md:bg-transparent md:bg-gradient-to-r md:from-blue-900 md:pr-64 lg:pr-[30rem] rounded-lg relative z-10">
+          <div className="p-10 md:p-16 max-w-4xl bg-blue-900 bg-opacity-60 md:bg-transparent md:bg-gradient-to-r md:from-blue-900 md:pr-64 lg:pr-[30rem] rounded-lg relative z-10">
             <div className="prose text-white mb-10 lg:mb-14">
           <img
             src="/images/case-studies/districthive/logo.png"

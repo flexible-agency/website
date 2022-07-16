@@ -31,7 +31,7 @@ function Header({ title, menu }) {
           href="https://includable.com/favicon.ico"
         />
       </Head>
-      <div className="flex flex-wrap items-center text-gray-600 justify-between py-6 px-8 md:py-8 mx-auto">
+      <div className="flex flex-wrap items-center text-gray-600 justify-between p-5 md:p-8 mx-auto">
         <Link href="/">
           <a title="Includable">
             <h1 className="flex items-center no-underline text-gray-900">
