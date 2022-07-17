@@ -127,7 +127,7 @@ export default function DistrictHiveCaseStudy() {
       <div className="prose mt-14">
         <h2>Learn more</h2>
         <p>
-          he first DistrictHive pod launched in Grenada, Spain in 2021, with
+          The first DistrictHive pod launched in Grenada, Spain in 2021, with
           more to come. It's available to book on all the major hotel booking
           sites.
         </p>
