@@ -79,55 +79,22 @@ function IndexPage() {
             </div>
           </a>
         </Link>
-      </div>
 
-      <div
-        className="rounded-lg bg-blue-100 bg-center bg-cover bg-no-repeat relative overflow-hidden mb-10"
-        style={{
-          backgroundImage: `url(/images/cover-thumbnails-cloud.svg)`,
-        }}
-      >
-        <div className="md:w-1/2 p-8 md:p-16 relative z-20">
-          <h2 className="text-2xl font-bold mb-3">Thumbnails Cloud</h2>
-          <p className="text-lg mb-12">
-            Generate image previews for more than 50 file types on the fly.
-          </p>
-          <Link href="/thumbnails-cloud">
-            <a className="font-semibold text-blue-600">Get started &rarr;</a>
+        <div className="text-center rounded-lg p-6 py-16 border border-gray-200">
+          <h2 className="mb-6 text-2xl font-bold text-gray-500">
+            Want to work together?
+          </h2>
+          <Link href="/consultancy">
+            <a className="inline-flex items-center px-5 py-2 mr-2 text-sm font-semibold rounded-full text-white bg-gray-800 hover:shadow hover:opacity-90 transition">
+              Book a call &nbsp;&rarr;
+            </a>
           </Link>
-        </div>
-      </div>
-
-      <div
-        className="rounded-lg bg-yellow-100 bg-contain bg-right bg-no-repeat relative overflow-hidden mb-10"
-        style={{
-          backgroundImage: `url(/images/cover-macaw.svg)`,
-        }}
-      >
-        <div className="w-2/3 md:w-1/2 p-8 md:p-16 relative z-20">
-          <h2 className="text-2xl font-bold mb-3">Macaw</h2>
-          <p className="text-lg mb-12">
-            A toolkit for sending transactional emails with simple templates.
-          </p>
-          <Link href="/macaw">
-            <a className="font-semibold text-blue-600">Learn more &rarr;</a>
-          </Link>
-        </div>
-      </div>
-      <div className="rounded-lg bg-gray-100 bg-contain bg-right bg-no-repeat relative overflow-hidden mb-10">
-        <div className="p-8 md:p-16 relative z-20">
-          <h2 className="text-2xl font-bold mb-3">Consulting</h2>
-          <p className="text-lg mb-12">
-            I&apos;m happy to help you with anything else related to tech
-            architecture or strategy.
-          </p>
-          <div className="flex flex-wrap">
-            <Link href="/consultancy">
-              <a className="font-semibold text-blue-600 mt-4">
-                Learn more &rarr;
-              </a>
-            </Link>
-          </div>
+          <a
+            href="mailto:hello@includable.com"
+            className="inline-flex items-center px-5 py-2 text-sm font-semibold rounded-full text-white bg-gray-800 hover:shadow hover:opacity-90 transition"
+          >
+            Send a message &nbsp;&rarr;
+          </a>
         </div>
       </div>
     </>

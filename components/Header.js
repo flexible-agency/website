@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import NavLink from "./navigation/NavLink";
+import Popout from "./navigation/Popout";
 
 function Header({ title, menu }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -78,7 +79,7 @@ function Header({ title, menu }) {
             isExpanded
               ? `block`
               : `hidden`
-          } md:block md:items-center w-full md:w-auto md:pr-1 text-gray-500`}
+          } md:block md:flex md:items-center w-full md:w-auto md:pr-1 text-gray-500`}
           onClick={() => toggleExpansion(false)}
         >
           {menu ? (
@@ -92,18 +93,34 @@ function Header({ title, menu }) {
               >
                 Consulting
               </NavLink>
-              <a
-                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-8"
-                href="https://github.com/includable?utm_source=includable-website"
-              >
-                Open source
-              </a>
-              <a
-                className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-8"
-                href="mailto:hello@includable.com"
-              >
-                Contact
-              </a>
+              <Popout
+                title="Products"
+                items={[
+                  {
+                    name: 'Thumbnails Cloud',
+                    href: '/thumbnails-cloud',
+                    description: 'Simple file thumbnails API'
+                  },
+                  {
+                    name: 'Macaw Email',
+                    href: '/macaw',
+                    description: 'Transactional emails toolkit'
+                  }
+                ]}/>
+              <Popout
+                title="About"
+                items={[
+                  {
+                    name: 'Open Source',
+                    href: 'https://github.com/includable?utm_source=includable-website',
+                    description: 'Our open source projects'
+                  },
+                  {
+                    name: 'Contact us',
+                    href: 'mailto:hello@includable.com',
+                    description: 'Let\'s work together'
+                  }
+                ]}/>
             </>
           )}
         </nav>
