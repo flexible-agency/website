@@ -17,7 +17,7 @@ function IndexPage() {
 
       <div className="grid gap-8 mb-12">
         <Link href="/case-studies/districthive">
-          <a className="black bg-gray-200 relative rounded-lg">
+          <a className="black bg-blue-900 relative rounded-lg">
             <Image
               alt="DistrictHive Pod"
               src="/images/case-studies/districthive/cover.jpg"
@@ -49,7 +49,7 @@ function IndexPage() {
         </Link>
 
         <Link href="/case-studies/spoorwijs">
-          <a className="block bg-gray-200 relative rounded-lg">
+          <a className="block bg-red-900 relative rounded-lg">
             <Image
               alt="Playing games on a train"
               src="/images/case-studies/spoorwijs/cover.jpg"
