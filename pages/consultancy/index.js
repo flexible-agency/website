@@ -1,12 +1,13 @@
 import React from "react";
 import Button from "../../components/Button";
+import Section from "../../components/layout/Section";
 
 function ConsultingPage() {
   return (
-    <>
-      <div className="prose md:prose-lg mb-6 md:mb-10 md:mt-10">
-        <h1>Tech consulting at any scale</h1>
-      </div>
+    <Section>
+      <h1 className="text-4xl md:text-5xl max-w-3xl font-extrabold leading-tight md:leading-tight mb-2 md:mb-5">
+        Tech consulting at any scale
+      </h1>
       <div className="prose prose-lg">
         <p>
           We advise and support organizations of all sizes in developing tech
@@ -79,7 +80,7 @@ function ConsultingPage() {
           </div>
         </div>
       </div>
-    </>
+    </Section>
   );
 }
 

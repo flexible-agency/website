@@ -1,5 +1,7 @@
 import React from "react";
 
+import Section from "../../components/layout/Section";
+
 export async function getStaticProps() {
   return {
     props: {
@@ -10,7 +12,7 @@ export async function getStaticProps() {
 
 function MaacawPage() {
   return (
-    <>
+    <Section>
       <div className="prose prose-lg mb-10">
         <h1>Transactional emails at scale</h1>
       </div>
@@ -116,7 +118,7 @@ function MaacawPage() {
           </a>
         </p>
       </div>
-    </>
+    </Section>
   );
 }
 

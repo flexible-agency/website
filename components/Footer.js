@@ -62,7 +62,7 @@ const social = [
 export default function Footer({ innerClass = "max-w-5xl" }) {
   return (
     <footer
-      className="bg-gray-100 text-gray-500 font-sans leading-normal mt-12"
+      className="bg-gray-900 text-white font-sans leading-normal mt-12"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">

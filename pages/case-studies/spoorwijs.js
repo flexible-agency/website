@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
+
 import Button from "../../components/Button";
+import Section from "../../components/layout/Section";
 
 export default function SpoorwijsCaseStudy() {
   return (
-    <>
-      <h3 className="text-blue-600 md:text-lg font-bold mb-2 uppercase">
+    <Section>
+      <h3 className="text-gray-900 md:text-lg font-bold mb-2 uppercase">
         <a href="/">Case study</a>
       </h3>
       <h1 className="text-4xl md:text-6xl max-w-3xl font-extrabold leading-tight md:leading-tight mb-2 md:mb-5">
@@ -111,6 +113,6 @@ export default function SpoorwijsCaseStudy() {
           Read more &nbsp;&nbsp;&rarr;
         </Button>
       </div>
-    </>
+    </Section>
   );
 }
